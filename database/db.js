@@ -1,8 +1,8 @@
 const mongoose = require("mongoose")
-
+const {MONGO_URL} = require("../config")
 
 // connect to mongoDB
-mongoose.connect('mongodb+srv://user03:mXQPVTwMdRJRhBly@cluster0.i8xu1.mongodb.net/CourseApp');
+mongoose.connect(MONGO_URL);
 
 const AdminSchema = new mongoose.Schema({
     email: String,
